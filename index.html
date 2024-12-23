@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .color {
+            color:rgb(255,0,0);
+        }
+    </style>
+</head>
+<body>
+    
+    
+    
+    <p class="paragrafo">Questo è il primo paragrafo.</p>
+    <p class="paragrafo">Questo è il secondo paragrafo.</p>
+    <p class="paragrafo">Questo è il terzo paragrafo.</p>
+    
+    <button id="cambiaColore">Cambia colore</button>
+    <button id="rendiGrassetto">Rendi grassetto</button>
+    <button id="nascondiMostra">Nascondi/Mostra</button>
+    
+    
+    <script>
+        let paragrafi = document.querySelectorAll('.paragrafo');
+        
+        paragrafi.forEach(el =>{
+            el.classList.add('color')
+        })
+
+
+        let button = document.createElement('button')
+
+        button.classList.add('color')
+    </script>
+</body>
+</html>
